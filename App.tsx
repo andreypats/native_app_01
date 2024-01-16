@@ -4,15 +4,15 @@ import BouncyCheckbox from "react-native-bouncy-checkbox"
 
 export default function App() {
 
+    const [value, setValue] = useState('Text')
+    
     const [tasks, setTasks] = useState([
         {id: 1, title: 'HTML', isDone: true},
         {id: 2, title: 'CSS', isDone: true},
         {id: 3, title: 'JS', isDone: false},
         {id: 4, title: 'React', isDone: true},
         {id: 5, title: 'React native', isDone: false},
-    ])
-
-    const [value, setValue] = useState('Text')
+    ])    
 
     const addTask = () => {
         const newTask = {id: tasks.length + 1, title: value, isDone: false}
