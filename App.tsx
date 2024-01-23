@@ -43,6 +43,12 @@ export default function App() {
     );
 }
 
+// const HideKeyboard = ({children}: { children: ReactNode }): ReactElement => {
+//     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
+//         {children}
+//     </TouchableWithoutFeedback>
+// }
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -71,11 +77,5 @@ const globalStyles = StyleSheet.create({
         borderColor: 'black',
     },
 })
-
-// const HideKeyboard = ({children}: { children: ReactNode }): ReactElement => {
-//     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
-//         {children}
-//     </TouchableWithoutFeedback>
-// }
 
 // 47_30 02-Вводное видео
